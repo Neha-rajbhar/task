@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .navbar {
   width: 100vw;
   height: 10%;
@@ -28,7 +29,7 @@
 }
 .heading {
   text-align: center;
-  padding-top: 5%;
+font-weight: 800;
   font-family: "Times New Roman", Times, serif;
 }
 .line {
@@ -220,8 +221,9 @@
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 768px) {
   .heading {
-    padding-top: 10%;
+    padding-top: 2%;
     align-content: center;
+    font-size: 1.5em;
   }
 
   .image {
