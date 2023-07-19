@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100vw;
+  height: 10%;
+  background-color: palevioletred;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.navbar ul {
+  /* border: 1px solid green; */
+  display: flex;
+  position: relative;
+  left: 65%;
+  width: 30%;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 4%;
+}
+.firstSection {
+  height: 100vh;
+  width: 100vw;
+}
+.heading {
+  text-align: center;
+  padding-top: 5%;
+  font-family: "Times New Roman", Times, serif;
+}
+.line {
+  text-align: center;
+  background-color: blueviolet;
+  height: 1%;
+  width: 20%;
+  border-radius: 10px;
+  position: relative;
+  left: 40%;
+  right: 50%;
+}
+.image {
+  width: 20%;
+  border-radius: 10%;
+}
+
+.img {
+  object-fit: contain;
+  border-radius: 50%;
+}
+.innerDiv {
+  width: 90%;
+  height: 85%;
+  position: relative;
+  left: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageHolder {
+  /* border: 1px solid pink; */
+  position: relative;
+  top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  border: none;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+
+  width: 150px;
+  padding: 0.5%;
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 45%;
+}
+
+/* second section */
+
+.secondSection {
+  /* border: 1px solid red; */
+  height: 100vh;
+  width: 100vw;
+  background-color: #dfe6e9;
+}
+
+.heading2 {
+  text-align: center;
+  height: 15%;
+  padding-top: 3%;
+}
+.featured-img {
+  display: flex;
+}
+.half-image {
+  width: 50%;
+  margin-left: 5%;
+}
+.half {
+  object-fit: contain;
+  width: auto;
+}
+.data {
+  text-align: center;
+}
+.Product-name {
+  text-align: center;
+}
+
+.Product-price {
+  margin-top: 0%;
+}
+
+/* third section */
+
+.thirdSection {
+  height: 30vh;
+  /* border: 1px solid red; */
+
+  padding: 0;
+}
+.text {
+  color: black;
+  /* border: 1px solid red; */
+}
+.head {
+  padding-top: 3%;
+}
+
+/* fourth section */
+
+.fourSection {
+  /* border: 1px solid green; */
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #c7ecee;
+}
+.firstImageSection {
+  /* border: 2px solid blue; */
+  width: 45%;
+}
+
+.firstImageSection p {
+  text-align: left;
+  padding-left: 20%;
+}
+.secondImageSection {
+  /* border: 2px solid blue; */
+  width: 55%;
+}
+.largePic {
+  object-fit: contain;
+  margin: 4%;
+}
+
+.imageMargin {
+  margin: 3%;
+}
+
+.secondImageSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.secondImageSection span {
+  width: 45%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.secondImageSection img {
+  max-width: 100%;
+  height: auto;
+}
+
+.secondImageSection p {
+  margin-top: 10px;
+}
+
+.secondImageSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.secondImageSection span {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+/* mediaquery for first section */
+
+/* Styles for screens larger than 900px */
+@media screen and (min-width: 901px) {
+  .imageHolder {
+    justify-content: center;
+  }
+
+  .image {
+    width: 20%;
+  }
+}
+
+/* Styles for screens larger than 1200px */
+@media screen and (min-width: 1201px) {
+  .imageHolder {
+    justify-content: space-around;
+  }
+}
+
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .heading {
+    padding-top: 10%;
+    align-content: center;
+  }
+
+  .image {
+    width: 15%;
+  }
+  .innerDiv {
+    width: 70%;
+    left: 15%;
+  }
+  .button {
+    margin-left: 40%;
+    margin-top: 7%;
+  }
+}
+
+/* Styles for screens larger than 992px */
+@media screen and (min-width: 992px) {
+  .imageHolder {
+    justify-content: space-between;
+  }
+}
+
+/* Styles for screens larger than 900px */
+@media screen and (min-width: 773px) and (max-width: 991px) {
+  .imageHolder {
+    justify-content: space-between;
+    margin: 4%;
+  }
+
+  .image {
+    width: 30%;
+    margin: 1.5%; /* Adjust the margin as per your preference */
+  }
+}
+
+/* Styles for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  .imageHolder {
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 30%;
+    margin: 1.5%; /* Adjust the margin as per your preference */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For screens smaller than 768px */
+
+  .line {
+    width: 40%;
+    left: 40%;
+  }
+
+  .image {
+    width: 30%;
+  }
+
+  .button {
+    margin-left: 40%;
+  }
+
+  .imageHolder {
+    flex-wrap: wrap;
+  }
+
+  .imageHolder img {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+
+/* 
+media query for secon section */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .featured-img {
+    flex-wrap: wrap;
+  }
+
+  .half-image {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .half {
+    width: 75%;
+    height: auto;
+  }
+}
+
+/* For screens between 769px and 900px */
+@media (min-width: 769px) and (max-width: 920px) {
+  .featured-img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .half-image {
+    width: 45%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .half {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For screens smaller than 768px */
+
+  .secondImageSection span {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondImageSection span {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fourSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstImageSection,
+  .secondImageSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 944px) {
+  .fourSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstImageSection,
+  .secondImageSection {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .firstImageSection {
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .largePic {
+    object-fit: contain;
+    margin: 5%;
+
+    position: relative;
+    left: 10%;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .imageMargin {
+    margin: 3%;
+  }
+}
